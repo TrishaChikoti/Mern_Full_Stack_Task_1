@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task-2</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 100px; 
+        }
+        ul.vertical {
+            background-color: white;
+            width: 200px;
+            padding: 5px;
+            list-style-type: none; 
+            border: 2px solid black; 
+            margin: 0; 
+        }
+        ul.vertical li {
+            background-color: skyblue;
+            padding: 15px;
+            color: blue;
+            font-size: large;
+           
+        }
+        ul.vertical li.active {
+            background-color: darkorange;
+            color: antiquewhite;
+        }
+        ul.vertical li:hover {
+            background-color: darkorange;
+        }
+        ul.horizontal {
+            background-color: lightgray;
+            padding:0;
+            list-style-type: none; 
+            display: flex;
+            border: 2px solid black; 
+            margin: 0; 
+        }
+        ul.horizontal li {
+            padding: 15px;
+            border-right: 1px solid blue; 
+            color: blue;
+        }
+        ul.horizontal li:last-child {
+            border-right: gray;
+            width:50px;
+        }
+        ul.horizontal li.active {
+            background-color: gray;
+            color: antiquewhite;
+        }
+        ul.horizontal li:hover {
+            background-color: darkorange;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>Vertical Navigation Bar</h3>
+            <ul class="vertical">
+                <li class="active"><a href="https://www.google.com/">Home</a></li>
+                <li><a href="https://www.google.com/">Java</a></li>
+                <li><a href="https://www.google.com/">CSS</a></li>
+                <li><a href="https://www.google.com">HTML</a></li>
+                <li><a href="https://www.google.com/">Bootstrap</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Horizontal Navigation Bar</h3>
+            <ul class="horizontal">
+                <li class="active"><a href="https://www.google.com/">Home</a></li>
+                <li><a href="https://www.google.com/">Java</a></li>
+                <li><a href="https://www.google.com/">HTML</a></li>
+                <li><a href="https://www.google.com/">CSS</a></li>
+                <li></li>
+               
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
